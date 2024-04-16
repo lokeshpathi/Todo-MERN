@@ -2,6 +2,8 @@ import React,{useEffect,useState} from 'react'
 import axios from 'axios'
 import Create from './Create'
 import Todo from './Todo'
+import { MdDeleteForever } from "react-icons/md";
+
 function App() {
   const [todos,setTodos]=useState([])
 
@@ -34,8 +36,10 @@ function handleDelete(){
                     
                   ))
                  }
-                 <button className='p-[4px] px-[8px] border-solid border-2 rounded-sm bg-black text-white
-                  hover:text-black hover:bg-white border-stone-950 hover:transition duration-75 delay-75' onClick={()=>handleDelete()}>Clear All Finished Tasks</button>
+                 <button className='flex gap-3 justify-center items-center p-[6px] px-[8px] border-solid border-2 rounded-sm bg-black text-white
+                  hover:text-black hover:bg-white border-stone-950 hover:transition duration-75 font-semibold' onClick={()=>handleDelete()}>Clear All Finished Tasks
+                  <MdDeleteForever/>
+                  </button>
         
         
       
