@@ -34,7 +34,8 @@ function handleDelete(){
                     
                   ))
                  }
-                 <button className='p-[4px] px-[8px] border-solid border-2 rounded-sm border-stone-950' onClick={()=>handleDelete()}>Clear All Finished Tasks</button>
+                 <button className='p-[4px] px-[8px] border-solid border-2 rounded-sm bg-black text-white
+                  hover:text-black hover:bg-white border-stone-950 hover:transition duration-75 delay-75' onClick={()=>handleDelete()}>Clear All Finished Tasks</button>
         
         
       
